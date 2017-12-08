@@ -1,0 +1,11 @@
+# Tomcat
+server:
+    port: 9000
+# mysql
+spring:
+  # 环境 dev|test|pro
+  profiles:
+      active: dev
+  # jackson时间格式化
+  jackson:
+      time-zone: GMT+8

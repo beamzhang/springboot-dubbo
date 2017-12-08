@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot_dubbo_master?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    username: root
+    password: zhangqiang
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource

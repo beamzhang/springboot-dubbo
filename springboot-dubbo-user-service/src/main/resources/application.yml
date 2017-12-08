@@ -1,0 +1,22 @@
+spring:
+  # 环境 dev|test|pro
+  profiles:
+      active: dev
+  # jackson时间格式化
+  jackson:
+      time-zone: GMT+8
+  aop:
+    auto: true
+    # 使用JDK代理，只有这样才能用Spring AOP拦截Mapper接口实现类 
+    proxy-target-class: false 
+## Mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+# Mybatis PageHelper
+pagehelper:
+  reasonable: true
+  page-size-zero: true
+  support-methods-arguments: true
+  auto-runtime-dialect: true
+
